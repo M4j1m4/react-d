@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('https://react-d-tau.vercel.app/')
+    fetch('http://localhost:8080/khen')
       .then(res => res.json())
       .then(data => setData(data))
       .catch(err => console.log(err));
